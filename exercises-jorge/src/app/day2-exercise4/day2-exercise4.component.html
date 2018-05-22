@@ -1,0 +1,14 @@
+<div class="jumbotron">
+  <h3 > Day 2 exercise 4</h3>
+ 
+  <div class="form-group">
+      <label for="exampleInputEmail1">Arithmetic calculator (n-numbers, m-operators, parenthesis).</label>
+      <input type="text" class="form-control" [(ngModel)]="expression" placeholder="Enter an expression" required>
+      <small class="form-text text-muted">The Arithmetic calculator will be calculated the value of this expression.</small>
+  </div>
+  <div *ngIf="result" class="form-group">
+    <p>{{result}}</p>
+  </div>
+  <button type="button" (click)="calculator()" class="btn btn-success">Calculate </button>
+  
+</div>

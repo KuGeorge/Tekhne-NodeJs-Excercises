@@ -1,0 +1,18 @@
+<div class="jumbotron">
+  <h3 >Day 2 exercise 1</h3>
+ 
+  <div class="form-group">
+      <label for="exampleInputEmail1">Fibonacci Console.</label>
+      <input type="number" class="form-control" [(ngModel)]="expression" placeholder="Enter a value for n" required>
+      <small class="form-text text-muted">The fibonacci series will be calculated for the value of n terms.</small>
+  </div>
+  <div *ngIf="fibonacci" class="form-group">
+    <ul>
+      <li *ngFor="let fibo of fibonacci">
+        {{fibo}}
+      </li>
+    </ul>
+  </div>
+  <button type="button" (click)="fibonacciConsole()" class="btn btn-success">Calculate {{expression}}</button>
+  
+</div>

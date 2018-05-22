@@ -1,0 +1,14 @@
+<div class="jumbotron">
+  <h3 >Day 2 exercise 3</h3>
+ 
+  <div class="form-group">
+      <label for="exampleInputEmail1">Simple arithmetic evaluator (2 numbers, 1 operator).</label>
+      <input type="text" class="form-control" [(ngModel)]="expression" placeholder="Enter an expression" required>
+      <small class="form-text text-muted">The arithmetic evaluator will be calculated the value of this expression.</small>
+  </div>
+  <div *ngIf="result" class="form-group">
+    <p>{{result}}</p>
+  </div>
+  <button type="button" (click)="calculator()" class="btn btn-success">Calculate </button>
+  
+</div>
