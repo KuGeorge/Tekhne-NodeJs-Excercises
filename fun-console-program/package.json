@@ -1,5 +1,5 @@
 {
-  "name": "exercises-console-input",
+  "name": "fun-console-program",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,10 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-console-input": "^1.1.1"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0"
+    "emailjs": "^2.2.0",
+    "pokemon": "^1.2.3",
+    "wifi-password": "^3.0.1"
   }
 }
