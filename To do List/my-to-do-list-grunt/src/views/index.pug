@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h1= title
+  p
+    table
+
+        thead
+          tr 
+            th Number
+            th Task
+            th Actions    
+        tbody
+    
+         each f, i in tasks
+            tr
+                td=f.number
+                td=f.task
+                td
+                    form(action='/' + f.number +'/delete',method='post',enctype='application/x-www-form-urlencoded')
+                         input(type='hidden',value='DELETE',name='_method')
+                         button(type='submit'). 
+                          Delete
+                    a(href='/' + f.number + '/edit') Edit
+
+    p  
+      a(href='/new' ) Add a NEW Task                
+   

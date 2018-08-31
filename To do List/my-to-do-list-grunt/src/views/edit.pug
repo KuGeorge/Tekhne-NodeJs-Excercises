@@ -1,0 +1,11 @@
+extends layout.pug
+
+block content
+	h1.
+		Task ID #{task.number}
+	form(action='/' + task.number + '/update',method='post',enctype='application/x-www-form-urlencoded')
+		p Task:
+			input(type="text", placeholder="ex. Do something", value= task.task , name="task")
+		p
+			button#btnSubmit(type='submit').
+				Update

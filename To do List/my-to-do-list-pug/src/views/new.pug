@@ -1,0 +1,8 @@
+extends layout.pug
+block content
+	h1.
+		#{title}
+	form(method="post",action="/")
+		p Task:
+			input(type="text", placeholder="ex. Do something", name="task")
+			button#btnSubmit(type="submit") submit
